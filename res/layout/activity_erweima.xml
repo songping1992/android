@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical" >
+     <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_top_bar_blue" >
+
+        <include
+            android:id="@+id/erweima_backBtnId"
+            layout="@layout/commom_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="二维码"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+     <Button
+         android:id="@+id/erweima_sys_btnid"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="扫一扫" />
+
+     <Button
+         android:id="@+id/erweima_sc_btnid"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="生成" />
+
+     <TextView
+         android:id="@+id/erweima_result_tvid"
+         android:layout_width="match_parent"
+         android:layout_height="50dp"
+         android:gravity="center"
+         android:text="result" />
+
+     <ImageView
+         android:id="@+id/erweima_ivid"
+         android:layout_width="200dp"
+         android:layout_height="200dp"
+         android:src="@drawable/ic_launcher" />
+
+</LinearLayout>

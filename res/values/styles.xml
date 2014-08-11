@@ -1,0 +1,54 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    
+    <style name="horizontal_slide" parent="android:Theme.NoTitleBar">
+        <item name="android:windowAnimationStyle">@style/AnimFade2</item>
+    </style>
+    
+    <style name="AnimFade2" parent="@android:style/Animation.Activity">
+        <item name="android:activityOpenEnterAnimation">@anim/slide_in_from_right</item>
+        <item name="android:activityOpenExitAnimation">@anim/slide_out_to_left</item>
+        <item name="android:activityCloseEnterAnimation">@anim/slide_in_from_left</item>
+        <item name="android:activityCloseExitAnimation">@anim/slide_out_to_right</item>
+    </style>
+    
+ 	<style name="AppTheme_Default" parent="AppBaseTheme">
+        <item name="button">@drawable/btn_grey</item>
+        <item name="background">@drawable/backgroud2</item>
+        <item name="textColor">@color/red</item>
+    </style>
+    
+ 	<style name="AppTheme_three" parent="AppBaseTheme">
+        <item name="button">@drawable/btn_grey</item>
+        <item name="background">@drawable/songchat_bg</item>
+        <item name="textColor">@color/lightcoral</item>
+    </style>
+    
+    <style name="AppTheme_Another" parent="AppBaseTheme">
+        <item name="button">@drawable/btn_blue</item>
+        <item name="background">@drawable/backgroud1</item>
+        <item name="android:actionBarStyle">@style/ActionBarStyle</item>
+        <item name="textColor">@color/blue</item>
+    </style>
+    
+    <style name="ActionBarStyle" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">#33b5e5</item>
+    </style>
+    
+</resources>

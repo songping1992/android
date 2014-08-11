@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical" >
+    
+	 <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_top_bar_blue" >
+
+        <include
+            android:id="@+id/tt_backBtnId"
+            layout="@layout/commom_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="主题切换"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+    	
+	 <Button 
+	     android:id="@+id/theme_one_btnid"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:text="主题1"
+	     android:background="?attr/button"
+	     android:textColor="?attr/textColor"
+	     />
+	 
+	  <Button 
+	     android:id="@+id/theme_two_btnid"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:background="?attr/button"
+	     android:textColor="?attr/textColor"
+	     android:text="主题2"
+	     />
+	  
+	   <Button 
+	     android:id="@+id/theme_three_btnid"
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:background="?attr/button"
+	     android:textColor="?attr/textColor"
+	     android:text="主题3"
+	     />
+	 
+</LinearLayout>

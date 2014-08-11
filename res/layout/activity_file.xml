@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?attr/background"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/height_top_bar"
+        android:background="@color/common_top_bar_blue" >
+
+        <include
+            android:id="@+id/file_backBtnId"
+            layout="@layout/commom_back_btn" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="文件"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/file_zhuanBtnId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="转" />
+
+    <Button
+        android:id="@+id/file_isCzBtnId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="是否存在" />
+
+    <Button
+        android:id="@+id/file_delete_btnid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除" />
+
+</LinearLayout>
