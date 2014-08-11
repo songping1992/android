@@ -16,11 +16,11 @@ import com.song.xk_one.activity.BaseActivity;
 
 public class MainActivity extends BaseActivity implements OnItemClickListener {
 	// private String TAG = MainActivity.class.getSimpleName();
-	private int[] draws = { R.drawable.apps_beiwang, R.drawable.apps_chakan, R.drawable.apps_diaocha, R.drawable.apps_gonggao, R.drawable.apps_qiandao, R.drawable.apps_set, R.drawable.apps_tixing,
-			R.drawable.apps_yiban };
+	private int[] draws = { R.drawable.apps_beiwang, R.drawable.apps_chakan, R.drawable.apps_diaocha, R.drawable.apps_gonggao,
+			R.drawable.apps_qiandao, R.drawable.apps_set, R.drawable.apps_tixing, R.drawable.apps_yiban };
 	private GridView gv;
 	private GvAdapter adapter;
-	private String[] strings = { "拼音", "XML", "写文件", "viewpager", "二维码", "主题", "1", "1" };
+	private String[] strings = { "拼音", "XML", "写文件", "viewpager", "二维码", "主题", "sdjsdjf", "sjdkj" };
 
 	@Override
 	public void initView() {
